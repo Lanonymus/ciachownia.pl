@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Playpen+Sans&family=Quicksand:wght@300;400;500;600;700&family=Ubuntu:ital@1&display=swap');
+
+
+:root{
+    --black: #181722;
+    --white: #f0f0f0;
+    --box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    --LightWhite: hsl(0, 0%, 99%);
+}
+
+
+*{
+
+    font-family: "Quicksand", sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+   
+}
+::selection {
+    background-color: #ffffff; /* Kolor tła podświetlenia */
+    color: #333; /* Kolor tekstu w podświetleniu */
+}
+  
+
+section{
+
+    height: 100vh;
+    padding: 2rem 7%;
+}
+html{
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 8rem;
+}
+
+html::-webkit-scrollbar{
+    width: 1.7rem;
+}
+
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+    
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 0.5rem;
+    background-color: rgb(223, 219, 219);
+}
+
+.layer-main-page{
+    background-image: url('Layers/blob-scene-haikei\ \(3\).svg');
+    z-index: -5;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+.header.scrolled {
+    box-shadow: var(--box-shadow);
+
+}
+
+
+
+
+
+.header{
+
+    transition: box-shadow 0.3s;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 3rem 5%; /* Adjusted padding for responsiveness */
+    z-index: 999;
+    min-height: 8rem; /* Adjusted min-height for responsiveness */
+    width: 100%; /* Make the header full width */
+    
+   
+    
+}
+
+.header .logocontent{
+    display: flex;
+    align-items: center;
+}
+
+.header .logocontent .logo img{
+    position: absolute;
+    height: 15rem; 
+    transform: translateY(-45%) translateX(250%);
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+  
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, .353fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3px;
+    justify-content: center;
+    max-width: 100%; /* Ensure the grid container does not exceed the width of the parent container */
+    width: 100%;
+    
+  }
+  
+  .grid-item {
+    width: 100%; /* Make sure grid items take up the full width of their container */
+    height: 100%;
+
+  }
+  
+  .grid-item img {
+    width: 17rem;
+    height: 22rem;
+    object-fit: cover;
+    border-radius: .3rem;
+    border: .1rem solid rgb(0, 0, 0);
+  }
+
+  .grid-container:hover img{
+    transform: scale(0.92);
+    position: relative;
+    border-radius: 1rem;
+    cursor: pointer;
+    gap: 17px;
+  }
+
+  .grid-item img:hover{
+     transform: scale(1.1); 
+    border-radius: 1rem;
+    cursor: pointer;
+    border: .15rem solid rgb(0, 0, 0);
+  } 
+
+
+  
+
+
+  
+
+
+.container-blogs{
+    height: 100vh;
+}
+
+
+.blogs .blogs-row .box  {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: .01rem solid black;
+    padding: 6.5rem;
+    border-radius: .7rem;
+    /* Add a transparent background color */
+    background-color: rgba(255, 255, 255, 0.197); /* Adjust the last value (alpha) to control transparency */
+
+    /* Add a blur effect to the background */
+    backdrop-filter: blur(10px); /* Adjust the blur value as needed */
+    transform: translateY(9%);
+    
+}
+
+.blogs .blogs-row .box .img{
+
+    border: 1.6rem solid white;
+    background-color: white;
+    
+}
+
+
+.blogs .blogs-row .box .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    padding-bottom: 7rem;
+ 
+}
+
+
+
+
+.blogs .blogs-row .box .content h3{
+    font-size: 4rem;
+    color: #191619;
+    text-shadow: var(--box-shadow);
+}
+
+.blogs .blogs-row .box .content .price{
+    font-size: 3rem;
+    color: #FF90C5;
+    font-weight: 500;
+}
+
+.blogs .blogs-row .box .content p{
+
+    font-size: 1.6rem;
+    color: var(--black);
+
+}
+
+.blogs .blogs-row .box .content .porcje{
+    font-size: 1.6rem;
+    color: var(--black);
+}
+
+
+
+.blogs .blogs-row .box .content a:hover{
+
+    color: var(--black);
+    text-shadow: var(--box-shadow);
+}
+
+.blogs .blogs-row .box .content .blog-button-1{
+    height: 3rem;
+    margin-top: 2rem;
+}
+.blogs .blogs-row .box .content button .btn{
+    font-size: 1.8rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: .7rem;
+    padding: .7rem 2rem;
+    cursor: pointer;
+}
+.blogs .blogs-row .box .content button:hover{
+    transform: scale(1.07);
+}
+
+
+
+
+.blogs .blogs-row .box .content .alergeny{
+    padding: 1rem 0;
+    
+   
+}
+.blogs .blogs-row .box .content .alergeny img{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: var(--white);
+    background: var(--black);
+    margin: 0 .4rem;
+    border-radius: 50%; 
+    transition: .7s;
+    text-align: center;
+}
+.blogs .blogs-row .box .content .alergeny img:hover{
+    background: var(--white);
+    color: var(--black);
+}
+
+
