@@ -1,5 +1,5 @@
 function redirectToCiachownia() {
-  window.open("Ciachownia.html", "_blank");
+  window.open("index.html", "_blank");
 }
 
 
