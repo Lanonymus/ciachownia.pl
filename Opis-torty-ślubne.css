@@ -267,3 +267,24 @@ html::-webkit-scrollbar-thumb{
 }
 
 
+@media (max-width:600px){
+
+    .header{
+        padding: .2rem 5%;  
+    }
+    .header .logocontent .logo img{
+        height: 13rem; 
+        transform: translateY(-45%) translateX(25%);
+    }
+    .grid-item img {
+        width: 9.8rem;
+        height: 13rem;
+      }
+
+      .blogs .blogs-row .box  {
+        padding: 0;
+        
+    }
+
+
+}
