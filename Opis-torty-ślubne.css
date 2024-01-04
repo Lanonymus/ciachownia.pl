@@ -276,12 +276,26 @@ html::-webkit-scrollbar-thumb{
 
 
 @media (max-width:800px){
+    .layer-main-page {
+        display: none; /* Ukryj layer-main-page dla małych ekranów */
+    }
 
+    .layer-main-page2 {
+        position: absolute;
+        background-image: url('Layers/mobile_background.svg');
+        z-index: -5;
+        width: 100%;
+        height: 130vh; 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: block;
+    }
     .header{
         padding: .2rem 5%;  
     }
     .header .logocontent .logo img{
-        height: 11.5rem; 
+        height: 9rem; 
     }
     .grid-item img {
         width: 8.5rem;
@@ -294,20 +308,13 @@ html::-webkit-scrollbar-thumb{
         padding: 0;
         
     }
-    .layer-main-page {
-        display: none; /* Ukryj layer-main-page dla małych ekranów */
-    }
 
-    .layer-main-page2 {
-        position: absolute;
-        background-image: url('Layers/test.svg');
-        z-index: -5;
-        width: 100%;
-        height: 100vh; /* Dostosuj wysokość do potrzeb */
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        display: block;
+    .blogs .blogs-row .box .img{
+        padding: 2rem;
+        border: none;
+        border-radius: none;
+        background-color: none;
+        backdrop-filter: none;
     }
 
 
