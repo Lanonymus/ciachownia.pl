@@ -54,14 +54,18 @@ html::-webkit-scrollbar-thumb{
 }
 
 .layer-main-page{
+    position: absolute;
     background-image: url('Layers/blob-scene-haikei\ \(3\).svg');
     z-index: -5;
     width: 100%;
+    height: 100vh; /* Dostosuj wysokość do potrzeb */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+    display: block;
 }
+
+
 
 
 .header.scrolled {
@@ -277,16 +281,33 @@ html::-webkit-scrollbar-thumb{
         padding: .2rem 5%;  
     }
     .header .logocontent .logo img{
-        height: 8rem; 
+        height: 11.5rem; 
     }
     .grid-item img {
-        width: 9.8rem;
-        height: 13rem;
+        width: 8.5rem;
+        height: 11rem;
       }
-
-      .blogs .blogs-row .box  {
+    .blogs{
+        padding-top: 4rem;
+    }
+    .blogs .blogs-row .box  {
         padding: 0;
         
+    }
+    .layer-main-page {
+        display: none; /* Ukryj layer-main-page dla małych ekranów */
+    }
+
+    .layer-main-page2 {
+        position: absolute;
+        background-image: url('Layers/test.svg');
+        z-index: -5;
+        width: 100%;
+        height: 100vh; /* Dostosuj wysokość do potrzeb */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: block;
     }
 
 
