@@ -991,7 +991,7 @@ html::-webkit-scrollbar-thumb{
 
 
 
-@media (max-width:1300px){
+@media (max-width:1400px){
 
 
 /*FOOTER SECTION STARTS HERE*/    
@@ -1057,7 +1057,7 @@ html::-webkit-scrollbar-thumb{
 /*MAP SECTION STARTS HERE*/
 
     .review .review-row{
-        margin-top: 10rem;
+        margin-top: -2rem;
         padding: 3rem;
     }
     .review .review-row .box{
@@ -1087,20 +1087,13 @@ html::-webkit-scrollbar-thumb{
         height: 38vh;
         padding: 1rem 3rem;
     }
-    
     .newsletter form{
         padding: 0rem 0;
-
     }
-    
-    
-    
     .newsletter form h3{
         font-size: 2.6rem;
         margin-right: 6rem;
     }
-    
-    
     .newsletter form .img{
         width: 80%;
         height: 80%;
@@ -1112,32 +1105,55 @@ html::-webkit-scrollbar-thumb{
 
     .blogs{
         background: url('Layers/layer-blog.svg') no-repeat;
-        height: 100%;
+        background-size: cover;
+        width: 100%;
         
      }
     .container-blogs{
-        height: 95vh;
-    }
-
-    .blogs .blogs-row .box  {
-        border-radius: .7rem;
-        border: .01rem solid black;
-        padding: 5rem;
+        height: 100vh;
+        overflow: hidden;
     }
 
     .blogs .blogs-row .box .content h3{
         font-size: 2.6rem;
     }
     .blogs .blogs-row .box .content p{
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
     .blogs .blogs-row .box .content .blog-button-1{
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
-    .container-blogs .swiper-pagination{
-        margin-top: 10rem;
 
+    .blogs .blogs-row .box  {
+        transform: translateY(0%);
+        height: 67rem;
     }
+    
+    .blogs .blogs-row .box .img{
+        height: 48rem; 
+        border: 1.5rem solid white;
+    }
+    .blogs .blogs-row .box .img img{
+        width: 100%;
+    }
+    
+    .blogs .blogs-row .box .content{
+        padding: 1.5rem;
+        padding-bottom: 5rem;
+    }
+    
+    .blogs .blogs-row .box .content h3{
+        font-size: 3rem;
+    }
+    
+    .blogs .blogs-row .box .content p{
+        font-size: 1.6rem;
+    }
+    .blogs .blogs-row .box .content .blog-button-1{
+        margin-top: 1.7rem;
+    }
+
+    
 
 
 
@@ -1145,33 +1161,57 @@ html::-webkit-scrollbar-thumb{
 
 
 
-    .product .product-row .box .image-container{
-        height: 15rem;
-        z-index: 2;
+
+    .product .product-row .product-content h3 {
+        font-size: 4rem;
+        color: var(--black);
     }
+
+    .product .product-row .product-content p {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        color: var(--black);
+    }
+
+    .product .product-row .product-content .orderNow {
+        transform: translateX(-50%) translateY(100%); /* Center the button horizontally */
+    }
+    .product .product-row .product-content .orderNow button {
+        font-size: 1.8rem;
+    }
+
+    .product .product-row .product-content .orderNow button:hover {
+        font-size: 1.7rem;
+    
+    }
+    .product .product-row .card .card-inner .card-back .image-container {
+        gap: .2rem;
+    }
+    .product .product-row .card .card-inner .card-back .img:hover {
+        flex: 3;
+    }
+
+    .product .product-row .card .card-inner .image-container{
+        height: 16rem;
+    }
+
+    .product .product-row .product-content {
+        margin-bottom: 0rem;
         
-    .container-product{
-        height: 100vh;
+    }
+    .product .product-row .card .card-inner .card-back .product-content {
+        margin-top: 17.2rem; 
     }
 
-
-    .product .product-row .box {
-
-        padding: 1.7rem;
-        gap: 1.5rem;
-        height: 37rem;
+    .card {
+        height: 40rem;
     }
-
-
     .product .product-row .img img {
-        width: 42%;
-        border-radius: 2%;
-        border: 1.1rem solid white;
-        object-fit: cover;
-        z-index: 2;
+        width: 12em;
+        height: 16rem;
+        border: 1rem solid white;
 
     }
-
     .product .product-row .img img:hover {
         transform: scale(1.1) rotate(3.5deg);
     }
@@ -1187,13 +1227,12 @@ html::-webkit-scrollbar-thumb{
     }
 
     .product .product-row .product-content .orderNow button {
-        font-size: 1.9rem;
-        padding: .5rem 1.2rem;
+        font-size: 1.7rem;
+        padding: .7rem 1.2rem;
+
     }
 
-    .product .product-row .product-content .orderNow button:hover {
-        font-size: 2.1rem;
-    }
+
     
 /*PRODUCT SECTION ENDS HERE*/
 
@@ -1202,9 +1241,8 @@ html::-webkit-scrollbar-thumb{
 
     .home .homeContent{
 
-        width: 100%;
         float: left;
-        text-align: center;
+        text-align: center; /*TUTAJ MASZ TEKST DO EDYCJI*/
         padding: 8rem;
         
 
@@ -1214,14 +1252,10 @@ html::-webkit-scrollbar-thumb{
 
         font-size: 5em;
         margin-bottom: 1rem;
-        line-height: 6rem;
-        color: #201f2d;
-        text-shadow: var(--box-shadow);
-
     }
 
     .home .homeContent p{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         line-height: 1.7;
         font-weight: 600;
         margin-bottom: 1.7rem;
@@ -1234,7 +1268,7 @@ html::-webkit-scrollbar-thumb{
     } 
         
     .home .homeContent .home-btn button:hover{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
 /*HEADER SECTION STARTS HERE*/
@@ -1251,7 +1285,7 @@ html::-webkit-scrollbar-thumb{
         
     }
     .header .navbar{
-        margin-left: 25rem;
+        margin-left: 20rem;
     }
     
     
@@ -1274,8 +1308,7 @@ html::-webkit-scrollbar-thumb{
     
         font-size: 1.6rem;
         margin-right: 2rem;
-        color: var(--black);
-        cursor: pointer;
+
     
     }
     
@@ -1396,6 +1429,8 @@ html::-webkit-scrollbar-thumb{
     }
 
 }
+
+
 
 /*PHONE USERS*/
 @media (max-width:600px){
