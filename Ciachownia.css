@@ -991,7 +991,7 @@ html::-webkit-scrollbar-thumb{
 
 
 
-@media (max-width:1400px){
+@media (max-width:1750px){
 
 
 /*FOOTER SECTION STARTS HERE*/    
@@ -1061,6 +1061,7 @@ html::-webkit-scrollbar-thumb{
         padding: 3rem;
     }
     .review .review-row .box{
+        margin-top: 8rem;
         padding: 2rem;
     }
 
@@ -1329,7 +1330,7 @@ html::-webkit-scrollbar-thumb{
 
 /*media questions for web responsie*/
 
-@media (max-width:991px){
+/* @media (max-width:991px){
     html{
         font-size: 55%;
     }
@@ -1343,8 +1344,8 @@ html::-webkit-scrollbar-thumb{
     }
     .blogs .blogs-row .box .img{
     
-        width: 60rem; /* Set the width as needed */
-        height: 55rem; /* Set the height to accommodate the vertical length */
+        width: 60rem; 
+        height: 55rem; 
         border: 1.6rem solid white;
     }
 
@@ -1363,15 +1364,12 @@ html::-webkit-scrollbar-thumb{
     .schedule table {
         width: 80%;
     }
-/*    .home .homeContent h2{
-        font-size: 5rem;
-        
-    }*/
 
 
 
 
-}
+
+} */
 
 @media (max-width:768px){
     #menu-bar{
@@ -1405,6 +1403,10 @@ html::-webkit-scrollbar-thumb{
     .home .homeContent{
         margin-left: 0;
         width: 90%;
+    }
+    .blogs .blogs-row .box  {
+        transform: translateY(0%);
+        height: 72rem;
     }
     .blogs .blogs-row .box .img{
     
@@ -1442,16 +1444,15 @@ html::-webkit-scrollbar-thumb{
     }
     .layer-home{
         background-image: url('Layers/layer1.svg');
-        transform: translateY(13%);
+        transform: translateY(10%);
         
         
     }
 
     .blogs .blogs-row .box .img{
     
-        width: 40rem; /* Set the width as needed */
-        height: 26rem; /* Set the height to accommodate the vertical length */
-        border: 1.6rem solid white;
+        height: 23rem; /* Set the height to accommodate the vertical length */
+        border: 1.1rem solid white;
     }
 
     .container{
@@ -1507,17 +1508,16 @@ html::-webkit-scrollbar-thumb{
         width: 50%; /* Adjust to your desired underline length */
 
     }
-    .blogs{
-        transform: translateY(-1.1%);
-        z-index: -99;
-     }
 
      .newsletter{
         height: 42vh;
     }
     .layer-review{
-        transform: translateY(-8%);
-        height: 80rem;
+        transform: translateY(-8%) rotate(0deg);
+        height: 60rem;
+
+
+        
     }
     .blogs .blogs-row .box .content{
         padding: .5rem;
